@@ -7,7 +7,7 @@ function Update()
   if (counter > spawnrate)
   {
     var enemy : Transform = enemies[Random.Range(0,len(enemies))];
-    var player : Transform = GameObject.FindWithTag("Player");
+    var player : Transform = GameObject.FindWithTag("Player").transform;
     enemy = Instantiate(enemy, Vector3(0,10,0), Quaternion.identity).transform;
     enemy.parent = transform;
     enemy.position = Vector3(Random.Range(-100+player.position.x,100+player.position.x), 100, Random.Range(-100+player.position.y,100+player.position.y));
