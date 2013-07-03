@@ -1,0 +1,1 @@
+"C:\Program Files\Unity\Editor\Unity.exe" -batchmode -buildWindowsPlayer "Build\Windows\GoldenGate_x86.exe" -buildOSXPlayer "Build\Mac\GoldenGate_x86.app" -buildLinux32Player "Build\Linux\GoldenGate_x86" -buildLinux64Player "Build\Linux\GoldenGate_x86_64" -quit
