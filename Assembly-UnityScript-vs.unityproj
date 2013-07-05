@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Dialog.js" />
      <Compile Include="Assets\Scripts\EnemyAI.js" />
+     <Compile Include="Assets\Scripts\GGUtils.js" />
      <Compile Include="Assets\Scripts\Health.js" />
      <Compile Include="Assets\Scripts\HideMouseCursor.js" />
      <Compile Include="Assets\Scripts\InformationScreen.js" />

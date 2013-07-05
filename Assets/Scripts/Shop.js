@@ -10,6 +10,7 @@ function OnTriggerEnter (c : Collider) {
   if (c.gameObject.tag == "Player")
   {
     on = true;
+    GameObject.FindWithTag("MainCamera").GetComponent(MouseLook).enabled = false;
   }
 }
 
@@ -17,12 +18,15 @@ function OnTriggerExit (c : Collider) {
   if (c.gameObject.tag == "Player")
   {
     on = false;
+    Screen.showCursor = false;
+    GameObject.FindWithTag("MainCamera").GetComponent(MouseLook).enabled = true;
   }
 }
 function OnGUI()
 {
   if (on)
   {
+    Screen.showCursor = true;
     var pInventory : Array = GameObject.FindWithTag("Player").GetComponent(Inventory).items;
     var money : float = GameObject.FindWithTag("Player").GetComponent(Inventory).money;
     var x : int = 10;

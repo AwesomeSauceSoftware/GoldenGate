@@ -26,6 +26,7 @@ function Update(){
 			Time.timeScale = 1;
 			AudioListener.volume = 1;
 			Screen.showCursor = false;			
+      GameObject.FindWithTag("MainCamera").GetComponent(MouseLook).enabled = true;
 		}
 		
 		//else if game isn't paused, then pause it
@@ -34,6 +35,7 @@ function Update(){
 			AudioListener.volume = 0;
 			Time.timeScale = 0;
 			Screen.showCursor = true;
+      GameObject.FindWithTag("MainCamera").GetComponent(MouseLook).enabled = false;
 		}
 	}
 }

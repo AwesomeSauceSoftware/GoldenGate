@@ -22,5 +22,8 @@ function Update () {
     reset = true;
   }
   if (reset)
-    transform.position = playerloc + Vector3(10, 20, 10);
+  {
+    transform.position = playerloc + Vector3(0, 0.9070835, 0);
+    transform.rotation = Quaternion.identity;
+  }
 }
